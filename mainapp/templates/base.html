@@ -1,0 +1,213 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="icon" href="{% static 'img/logo.png' %}">
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>
+    {% block title %}
+    {% endblock %}
+  </title>
+<style>
+a {
+  position: relative;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #0b0a09;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+</style>
+
+
+</head>
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true
+  });
+</script>
+<body>
+  <div class="container-fluid">
+    <!-- navbar start -->
+    <div class="row bg-dark sticky-top">
+      <div class="col-sm-2">
+        
+        <img src="{% static 'img/logo.png' %}" alt="logo" height="60px">
+      </div>
+      <div class="col-sm-10 bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
+          <div class="container-fluid">
+
+            <div  id="navbar" class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                   <a href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                 <a href="{% url 'login' %}">Login</a>
+                </li>
+                <li class="nav-item">
+                <a href="{% url 'register' %}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+              </ul>
+              <h2><i class="fa-solid fa-building text-dark"></i></h2>
+              <h2><i class="fa-solid fa-building-columns me-3 ms-2 text-dark"></i></h2>
+              <form class="d-flex me-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <a href="{% url 'login' %}" class="me-3 ms-2 btn btn-outline-dark fw-bold">Login</a>
+              </form>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+
+    <!-- navbar end -->
+     {% block main  %}
+
+     {% endblock  %}
+  <!-- Footer start -->
+    <footer class="row bg-dark text-light">
+      <div class="col-sm-10 mx-auto mt-5">
+<iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28459.0436873134!2d80.93253074371367!3d26.923150569559883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957b75d9721a9%3A0x7b287d1599f1af94!2sJankipuram%2C%20Lucknow%2C%20Uttar%20Pradesh%20226021!5e0!3m2!1sen!2sin!4v1753493252281!5m2!1sen!2sin"
+           height="400" width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-sm-11 mx-auto py-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4 class="ps-3"><i class="fa-solid fa-location-dot"></i>Find Us</h4>
+            <p class="fw-semibold ps-4 ">
+              Dev Nagar Colony, Kursi Road
+              <br>
+              (Near Naveen Galla Mandi),Jankipuram
+              <br>
+              (Lucknow) - 224001
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h4><i class="fa-solid fa-phone"></i>Call Us</h4>
+            <p>+91 94150 25623
+              <br>
+              +91 94157 80361
+            </p>
+          </div>
+          <div class="col sm-4">
+            <h4><i class="fa-solid fa-box"></i>
+            Mail Us</h4>
+            <p>info@sbh.org
+              <br>
+            smartbuidhub@gmail.com
+            </p>
+          </div>
+        </div>
+        <hr class="text-dark py-3">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <h3>Welcome To SBH</h3>
+            <hr>
+            <p>An innovative digital platform transforming traditional home construction methods through seamless collaboration between homeowners, architects, contractors, and suppliers.
+
+</p>
+            <h3>Follow us</h3>
+            <br>
+            <h3><i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google-plus"></i>
+            </h3>
+          </div>
+          <div class="col-sm-4">
+            <h3>Useful Links </h3>
+            <hr>
+            <a href="{% url 'index' %}" class="text-white ps-5">Home</a>
+            <a href="{% url 'about' %}" class="text-white ps-5">About</a>
+            <br>
+            <a href="" class="text-white ps-5">Services</a>
+            <a href="" class="text-white ps-5">Portpolio</a>
+            <br>
+            <a href="{% url 'contact' %}" class="text-white ps-5">Contact</a>
+            <a href="{% url 'about' %}" class="text-white ps-5">About Us</a>
+            <br>
+            <a href="" class="text-white ps-5">Our Services</a>
+            <a href="" class="text-white ps-4">Expert Team</a>
+            <br>
+            <a href="{% url 'contact' %}" class="text-white ps-5">Contact us</a>
+            <a href="" class="text-white ps-5">Latest News</a>
+          
+          </div>
+          <div class="col-sm-4">
+            <h3>Subscribe</h3>
+            <hr>
+            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.
+            <div class="mb-3">
+
+              <input type="email" class="form-control border-warning" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            </p>
+          </div>
+        </div>
+        <div class="row py-3 pb-0">
+          <div class="col-sm-8">
+            <p>© Copyright 2024 Designed & Developed By <i class="text-warning"><a href="{% url 'riya' %}" class="text-warning">Riya Gupta</a></i> |
+            <br>
+              Softpro India Computer Technologies (P) Ltd.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <a href="{% url 'index' %}" class="text-white ps-5">Home</a>
+            <a href="" class="text-white ps-2">Terms</a>
+            <a href="" class="text-white ps-2">Privacy</a>
+            <a href="" class="text-white ps-2">Policy</a>
+            <a href="{% url 'contact' %}" class="text-white">Contact</a>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+    <!-- Footer end -->
+
+  </div>
+  <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script
+</body>
+
+</html>

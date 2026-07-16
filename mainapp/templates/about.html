@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+About
+{% endblock %}
+{% block main %}
+
+<div class="row" id="about">
+  <div class="col-sm-12">
+    <h1 class="text-warning fw-bold display-3 ms-5 mt-5 py-5 text-center">About SmartBuildHub</h1>
+    <h1 class="text-warning fw-bold  ms-5 text-center">__________</h1>
+    <h1 class="text-white fw-bold ms-5 mt-2 py-5 text-center">Revolutionizing the construction industry with innovative
+      smart building solutions and sustainable practices.</h1>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-sm-11 mx-auto">
+    <div class="row shadow">
+      <h1 class="fw-bold text-warning">Building Better Homes Together—</h1>
+      <div class="col-sm-6">
+        <h4 class="mt-4">Quality Products, Affordable Prices</h4>
+        <p>At Smart Build Hub, we offer premium sanitary ware, paints, and electrical hardware from top brands. Our
+          mission is to help you save money while building high-quality homes in the Hisar region.</p>
+      </div>
+      <div class="col-sm-6">
+        <h4 class="mt-4">Your Trusted Home Partner</h4>
+        <p>We pride ourselves on providing a wide range of branded products like Cera, Jaquar, Asian Paints, and more,
+          ensuring that you have everything needed to create your dream home.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-sm-11 mx-auto">
+    <h4 class="text-warning text-center">WHO WE ARE</h4>
+    <h1 class="text-center mt-3">Our Mission</h1>
+    <h2 class="text-warning text-center">_____</h2>
+    <p class="text-center mt-3">At SmartBuildHub, we're committed to transforming the future of construction through
+      cutting-edge technology, sustainable practices, and unparalleled expertise. We believe in creating buildings that
+      are not just structures, but intelligent ecosystems that enhance lives.</p>
+  </div>
+</div>
+<hr>
+  
+ <section class="counter-section">
+    <div class="counter-card">
+      <h1 class="counter" data-target="250">0</h1>
+      <p>Projects Completed</p>
+    </div>
+    <div class="counter-card">
+      <h1 class="counter" data-target="30">0</h1>
+      <p>Years Experience</p>
+    </div>
+    <div class="counter-card">
+      <h1 class="counter" data-target="98">0</h1>
+      <p>Client Satisfaction</p>
+    </div>
+    <div class="counter-card">
+      <h1 class="counter" data-target="42">0</h1>
+      <p>Industry Awards</p>
+    </div>
+  </section>
+
+<div class="row mt-5">
+  <div class="col-sm-6 ms-5">
+    <h4 class="text-warning fw-bold">Our Journey</h4>
+    <h1>Our Story</h1>
+
+    <p class="mt-3" style="font-size: larger;">Founded in 2010, SmartBuildHub began with a simple vision: to integrate
+      smart technology into every aspect of construction and building management. What started as a small team of
+      innovators has grown into an industry-leading company.</p>
+    <p style="font-size: larger;">Over the years, we've pioneered numerous building technologies that have
+      revolutionized how structures are designed, built, and maintained. Our commitment to sustainability and innovation
+      has earned us recognition as one of the most forward-thinking companies in the construction sector.</p>
+  </div>
+  <div class="col-sm-4">
+    <img src="{% static 'img/nikita.jpg' %}" 
+     class="img-fluid about-img shadow" 
+     alt="About Image">
+  </div>
+</div>
+{% endblock %}
+<a href="{% url 'index' %}">Home</a>
+<br>
+<a href="{% url 'contact' %}">Contact</a>
+<br>
+<a href="{% url 'login' %}">Login</a>
+<br>
+<a href="{% url 'register' %}">Register</a>
+<br>
+<a href="{% url 'about' %}">About</a>
+</body>
+
+</html>

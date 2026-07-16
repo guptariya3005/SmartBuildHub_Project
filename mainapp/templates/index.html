@@ -1,0 +1,351 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block main %}
+<!-- slider start -->
+<div class="row bg-dark" data-aos="fade-up">
+  <div class="col-sm-12 mt-5" id="slider">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <h3 class="text-warning ms-5">— Building Tommorrow Today</h3>
+          <h1 class="ms-5 fw-bold display-3 text-light">Transforming <i class="text-warning">Visions </i>Into <br>
+            Exceptional <i class="text-warning">Structures</i></h1>
+          <h3 class="ms-5 mt-3 text-light">With over 25 years of experience, we deliver innovative construction <br>
+            solutions that exceed expectations and stand the test of time.</h3>
+        </div>
+        <div class="carousel-item">
+          <h1 class="text-light">Building Your <i class="text-warning">Dreams</i>,One <i class="text-warning">Brick At
+              A</i> Time....</h1>
+          <img src="{% static 'img/jjj.jpeg' %}" class="d-block w-100" alt="image" height="400px">
+        </div>
+        <div class="carousel-item">
+          <h1 class="text-light">Building Your <i class="text-warning">Dreams</i>,One <i class="text-warning">Brick At
+              A</i> Time....</h1>
+          <img src="{% static 'img/b3.jpg' %}" class="d-block w-100" alt="image" height="400px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>`
+      </button>
+    </div>
+    <button type="button" class="btn btn-warning ms-5 mt-4">Get Started ></button>
+    <button type="button" class="btn btn-outline-warning mt-4 ms-2">Our Projects ></button>
+
+  </div>
+</div>
+<!-- slider end -->
+<!-- counter start -->
+<div class="row bg-dark">
+  <div class="col-sm-3 mb-4 counter-card1">
+    <div class="card border-warning mb-3 bg-dark mt-5 ms-5" style="max-width: 18rem;">
+      <h2 class="text-warning fw-bold ms-3 me-3">35+</h2>
+      <h5 class="text-light ms-3">Years Experience</h5>
+
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-warning mb-3 bg-dark mt-5 ms-5 counter-card1" style="max-width: 18rem;">
+      <h2 class="text-warning fw-bold ms-3 me-3">250+</h2>
+      <h5 class="text-light ms-3">Projects Completed</h5>
+
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-warning mb-3 bg-dark mt-5 ms-5 counter-card1" style="max-width: 18rem;">
+      <h2 class="text-warning fw-bold ms-3 me-3">98%</h2>
+      <h5 class="text-light ms-3">Clients Satisfied</h5>
+
+    </div>
+  </div>
+</div>
+<!-- counter end -->
+<!-- about company start -->
+<div class="row" id="rrr">
+  <div class="col-sm-11 mx-auto">
+    <div class="row mt-5">
+      <div class="col-sm-6 mt-5">
+        <img src="{% static 'img/worker.jpg' %}" alt="" height="300px">
+      </div>
+      <div class="col-sm-6 shadow">
+        <h4 class="text-warning">— About our company</h4>
+        <h1 class="fw-bold">Building Dreams With Excellence & Reliability</h1>
+        <p>With decades of industry experience, our team of professional builders and architects are dedicated to
+          bringing your vision to life. We handle projects of any scale with meticulous attention to detail and
+          unwavering commitment to quality.</p>
+        <h6><i class="fa-regular fa-circle-check text-warning"></i> Professional team of experienced builders and
+          designers</h6>
+        <h6><i class="fa-regular fa-circle-check text-warning"></i> High-quality materials sourced from trusted
+          suppliers</h6>
+        <h6><i class="fa-regular fa-circle-check text-warning"></i> On-time project completion and transparent
+          communication</h6>
+        <button type="button" class="btn btn-warning mt-4 mb-4">Learn more About Us ></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about company end -->
+<!-- platform features start -->
+<div class="row bg-dark">
+  <h5 class="text-warning text-center mt-5">—PLATFORM FEATURES—</h5>
+  <h2 class="text-light text-center fw-bold mt-3">Powerful Tools for Modern Construction</h2>
+  <p class="text-center text-light mt-3">Our comprehensive suite of features empowers every stakeholder in the
+    construction process with the tools <br> they need to succeed.</p>
+</div>
+<div class="row bg-dark">
+  <div class="col-sm-11 mx-auto">
+    <hr>
+    <div class="row">
+      <div class="col-sm-3 mt-5 ms-5 mb-5" data-aos="flip-left">
+        <div class="card" style="width: 20rem;">
+          <h4><i class="fa-solid fa-gauge text-warning ms-2 mt-3"></i></h4>
+          <div class="card-body">
+            <h3>Project Dashboard</h3>
+            <p>Centralized hub for tracking progress, milestones, and resource allocation with intuitive
+              visualizations.</p>
+            <p> <b class="text-warning fw-bold">✓</b> Real-time status tracking</p>
+            <p> <b class="text-warning fw-bold">✓</b> Task management system</p>
+            <p> <b class="text-warning fw-bold">✓</b> Budget monitoring</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mt-5 ms-5 mb-5" data-aos="flip-left">
+        <div class="card" style="width: 20rem;">
+          <h4><i class="fa-solid fa-people-group text-warning ms-2 mt-3"></i></h4>
+          <div class="card-body">
+            <h3>Team Collaboration</h3>
+            <p>Connect all stakeholders in one platform with powerful communication and file-sharing capabilities.
+            </p>
+            <p> <b class="text-warning fw-bold">✓</b> Unified messaging system</p>
+            <p> <b class="text-warning fw-bold">✓</b> Document sharing & approvals</p>
+            <p> <b class="text-warning fw-bold">✓</b> Role-based permissions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mt-5 ms-5 mb-5" data-aos="flip-left">
+        <div class="card" style="width: 20rem;">
+          <h4><i class="fa-solid fa-cube text-warning ms-2 mt-3"></i></h4>
+          <div class="card-body">
+            
+            <h3>3D Visualization</h3>
+            <p>Experience your construction project in three dimensions before breaking ground..</p>
+            <p> <b class="text-warning fw-bold">✓</b> Interactive models</p>
+            <p> <b class="text-warning fw-bold">✓</b> Virtual walkthroughs</p>
+            <p> <b class="text-warning fw-bold">✓</b> Design revisions in real-time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- platform features end -->
+<!-- our service start -->
+<div class="row" id="rrr">
+  <div class="col-sm-12 mt-5" >
+    <h4 class="text-center mt-5 text-warning">—Our Services—</h4>
+    <h2 class="fw-bold text-center">Comprehensive Construction Solutions</h2>
+    <p class="text-center mt-4">We offer a wide range of construction services tailored to meet the unique needs of each
+      project, delivered <br> with exceptional craftsmanship and attention to detail.</p>
+  </div>
+</div>
+<div class="row mt-5 p-0">
+  <div class="col-sm-11 mx-auto">
+    <div class="row">
+      <div class="col-sm-3 ms-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body btn btn-outline-warning shadow">
+            <h1>🏠</h1>
+            <h4>Residential <br> Construction</h4>
+            <p class="card-text">From custom homes to multi-family units, we build comfortable, energy-efficient
+              residential spaces designed for modern living.</p>
+            <p>Learn More —></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ms-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body btn btn-outline-warning shadow">
+            <h1>🏢</h1>
+            <h4>Commercial Buildings</h4>
+            <p class="card-text">Office spaces, retail centers, and industrial facilities built to the highest standards
+              of quality and functionality.</p>
+            <p>Learn More —></p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ms-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body btn btn-outline-warning shadow">
+            <h1>🎨</h1>
+            <h4>Interior Design</h4>
+            <p class="card-text">Transform your space with our expert interior design services, creating environments
+              that inspire and delight.
+            </p>
+            <p>Learn More —></p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-sm-3 ms-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body btn btn-outline-warning shadow">
+            <h1>🔨</h1>
+            <h4>Renovation & <br> Remodeling</h4>
+            <p class="card-text">Breathe new life into existing structures with our comprehensive renovation and
+              remodeling services.</p>
+            <p>Learn More —></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ms-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body btn btn-outline-warning shadow">
+            <h1>📐</h1>
+            <h4>Architectural Design</h4>
+            <p class="card-text">Innovative architectural solutions that balance aesthetics, functionality, and
+              sustainability.</p>
+            <br>
+            <p>Learn More —></p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ms-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body btn btn-outline-warning shadow">
+            <h1>📝</h1>
+            <h5 class="fw-bold">Construction Management</h5>
+            <p class="card-text">Expert oversight of your project from concept to completion, ensuring efficiency and
+              quality at every stage.
+            </p>
+            <p>Learn More —></p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our service end -->
+<!-- our projects start -->
+<div class="row bg-white mt-5">
+  <div class="col-sm-11 mx-auto">
+    <div class="row py-5">
+      <div class="col-sm-6">
+        <h1 class="text-dark">Helping our Esteemed Customer's to build Better Homes with Quality Products</h1>
+        <p class="mt-5 text-dark"><i>Smart Build Hub offers premium sanitary ware, paints, and hardware. Our mission is to help
+            you save money while building high-quality homes with trusted brands like Cera, Jaquar, Apex, Premium
+            Bathtubs, Shower panels, Large variety of Vanities, Water Tanks, Finolex Pipes & Fittings, Prince Pipes,
+            Dulux, Berger, Asian Paints, K2 Tile Adhesive, Havells, Indoasian, L&T switches, Jaquar Lightings, Luker,
+            Hosper, Faber, Cata Chimney, P and more</i></p>
+      </div>
+      <div class="col-sm-6" data-aos="zoom-in">
+        <img src="{% static 'img/a1.jpg' %}" alt="" height="500px">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our projects end -->
+<!-- our brands start -->
+<div class="row mt-3">
+  <div class="col-sm-12" data-aos="flip-left">
+    <h1 class="text-center">High Quality Brands</h1>
+    <p class="text-center">Explore our premium sanitary ware, paints, and electrical hardware offerings.</p>
+    <img src="{% static 'img/a3.png' %}" alt="" height="400px">
+  </div>
+</div>
+<!-- our brands end -->
+<!-- our projects2 start -->
+<div class="row bg-dark mt-5">
+  <div class="col-sm-11 mx-auto">
+    <h4 class="text-warning mt-5">—OUR PROJECTS</h4>
+    <h1 class="text-light">Featured Construction Projects</h1>
+    <div class="row">
+      <div class="col-sm-7 mt-4">
+        <p class="text-light">Take a look at some of our most impressive projects, showcasing our commitment to quality,
+          innovation, and excellence in construction.</p>
+      </div>
+      <div class="col-sm-3 mb-5">
+        <button type="button" class="btn btn-outline-warning mt-4 ms-2">View all Projects ></button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4" data-aos="zoom-in">
+        <div class="card border-warning bg-dark p1" style="width: 18rem;">
+         <p class="text-warning mt-5 ms-3">Commercial</p>
+        <h3 class="text-light ms-3">Modern office Complex</h3>
+        <p class="text-warning ms-3">View Projects →</p>
+        </div>
+      </div>
+      <div class="col-sm-4" data-aos="zoom-in">
+         <div class="card border-warning bg-dark p2" style="width: 18rem;">
+        <p class="text-warning mt-5 ms-3">Residential</p>
+        <h3 class="text-light ms-3">Luxury Residental Tower</h3>
+        <p class="text-warning ms-3">View Projects →</p>
+      </div>
+      </div>
+      <div class="col-sm-4" data-aos="zoom-in">
+        <div class="card border-warning bg-dark p3" style="width: 18rem;">
+         <p class="text-warning mt-5 ms-3">Public</p>
+        <h3 class="text-light ms-3">Sustainable community center</h3>
+        <p class="text-warning ms-3">View Projects →</p>
+        </div>
+       
+      </div>
+    </div>
+    <div class="row mt-5 mb-5">
+      <div class="col-sm-4" data-aos="zoom-in">
+         <div class="card border-warning bg-dark p4" style="width: 18rem;">
+         <p class="text-warning mt-5 ms-3">Hospitality</p>
+        <h3 class="text-light ms-3">Waterfront Hotel & Spa</h3>
+        <p class="text-warning ms-3">View Projects →</p>
+        </div>
+      </div>
+      <div class="col-sm-4" data-aos="zoom-in">
+       <div class="card border-warning bg-dark p5" style="width: 18rem;">
+         <p class="text-warning mt-5 ms-3">Mixed Use</p>
+        <h3 class="text-light ms-3">Urban Mixed-use Development</h3>
+        <p class="text-warning ms-3">View Projects →</p>
+        </div>
+      </div>
+      <div class="col-sm-4" data-aos="zoom-in">
+       <div class="card border-warning bg-dark d1" style="width: 18rem;">
+         <p class="text-warning mt-5 ms-3">Industrial</p>
+        <h3 class="text-light ms-3">Industrial Manufacturing Hub</h3>
+        <p class="text-warning ms-3">View Projects →</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our projects2 end -->
+<!-- reviews start -->
+<div class="row bg-white">
+  <h1 class="text-warning text-center"><u>Reviews</u></h1>
+  <div class="col-sm-6 mt-4 ms-5">
+    <p>⭐⭐⭐⭐⭐</p>
+    <p class="text-dark">Smart Build Hub helped me find quality products at great prices for my home renovation
+      project.</p>
+  </div>
+  <div class="col-sm-6 mt-4 ms-5">
+    <p>⭐⭐⭐⭐⭐</p>
+    <p class="text-dark">I saved money and built a better home with Smart Build Hub's excellent range of branded
+      products.</p>
+  </div>
+</div>
+<!-- reviews end -->
+{% endblock %}

@@ -1,0 +1,143 @@
+#slider {
+  overflow-x: hidden;
+}
+
+.mycard
+{
+    background-image:url('../img/i7.jpeg'); 
+    background-size:cover;
+    background-attachment: fixed;
+} 
+#login
+{
+
+background-image: url('../img/login-bg.png');
+background-size: cover;
+}
+
+#about
+{
+    height: 600px;
+    background-image: url('../img/bb2.jpeg');
+    background-size: cover;
+}
+#rrr
+{
+    height: 100vh;
+    background-image:url('../img/ll.jpeg'); 
+    background-size:cover;
+    background-attachment: fixed;
+} 
+#navbar ul li
+{
+list-style-type:none;
+display:inline;
+}
+#navbar ul li a
+{
+color:black;
+text-decoration:none;
+padding:15px;
+}
+#navbar ul li a:hover
+{
+color:black;
+}
+
+.p1
+{
+    height: 200px;
+    background-image: url('../img/b1.jpg');
+    background-size: cover;
+  
+}
+.p2
+{
+    height: 200px;
+    background-image: url('../img/r3.jpg');
+    background-size: cover;
+  
+}
+.p3
+{
+    height: 200px;
+    background-image: url('../img/b2.jpg');
+    background-size: cover;
+  
+}
+.p4
+{
+    height: 200px;
+    background-image: url('../img/i3.jpg');
+    background-size: cover;
+  
+}
+.p5
+{
+    height: 200px;
+    background-image: url('../img/i4.jpg');
+    background-size: cover;
+  
+}
+.d1
+{
+    height: 200px;
+    background-image: url('../img/i2.jpg');
+    background-size: cover;
+  
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.counter-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.counter-card {
+  background: linear-gradient(135deg, #ffe8d2, #fff4eb);
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 0 #ff6a00;
+  transition: transform 0.3s;
+}
+
+.counter-card:hover {
+  transform: scale(1.05);
+}
+
+.counter {
+  font-size: 50px;
+  color: #ff4d00;
+  margin: 0;
+}
+
+.counter + p {
+  font-size: 20px;
+  color: #2e2e2e;
+  margin-top: 15px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1f21;
+  color: #fff;
+}
+
+.counter-card1 {
+  transition: transform 0.3s;
+}
+
+.counter-card1:hover {
+  transform: scale(1.05);
+}
+
+

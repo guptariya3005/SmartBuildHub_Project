@@ -1,0 +1,32 @@
+{% extends 'homeownerbase.html' %}
+{% block homeowner %}
+<h1 class="text-center">Homeowner Profile</h1>
+<div class="row">
+    <div class="col-sm-4 mx-auto">
+        <div class="card border-warning" style="background-color: rgb(246, 171, 74);">
+            <div class="card-header text-center border-warning" style="background-color: rgb(245, 192, 122);">
+                {% if homeowner.picture %}
+                <img src="{{homeowner.picture.url}}" alt="" height="100px" width="100px" class="border rounded-circle">
+            {% else %}
+            <img src="" alt="" height="100px" width="100px" class="border rounded-circle">
+            {% endif %}
+            <h4> {{homeowner.name}}</h4>
+        </div>
+            <div class="card-body">
+               
+                <p>Contact No. {{homeowner.contactno}}
+                <br>
+                Email Address: {{homeowner.email}}
+                <br>
+                Address: {{homeowner.address}}
+                <br>
+                Bio: {{homeowner.bio}}
+                </p>
+            </div>
+            <div class="card-footer text-center">
+                 <a href="{% url 'homeowneredit' %}" class="btn btn-success">Update Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

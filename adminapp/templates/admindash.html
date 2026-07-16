@@ -1,0 +1,51 @@
+
+{% extends 'adminbase.html' %} 
+{% load static %}
+{% block admin %} 
+<div class="row">
+    <div class="col-sm-12">
+        <h2 class="text-center text-warning"><u>Admin Dashboard</u></h2>
+        <!-- box start -->
+        <div class="row">
+  <div class="col-sm-3 mb-4">
+    <div class="card border-warning shadow p-5">
+      <h5>Total Homeowners</h5>
+      <h2>{{th}}</h2>
+      
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-warning shadow p-5">
+      <h5>Total Contractors</h5>
+      <h2>{{tc}}</h2>
+      
+    </div>
+    </div>
+  <div class="col-sm-3">
+     <div class="card border-warning shadow p-5">
+      <h5>Ongoing Projects</h5>
+      <h2>{{tp}}</h2>
+    </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card border-warning mb-3 mt-5 ms-5 shadow">
+      <h4 class="text-warning fw-bold ms-3 me-3 mt-3">500  <i class="fa-solid fa-thumbs-up ms-5"></i> </h4>
+      <h5 class=" ms-3">Downloads</h5>
+      <div class="row mt-3 mx-0 bg-warning">
+        <p class="text-white mt-2" style="font-size:x-small;">1k download in App store <i class="fa-solid fa-arrow-trend-up ms-2"></i></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+<!-- box end -->
+ <div class="row">
+  <h3>Sales overview</h3>
+  <h5>4% more in 2024</h5>
+  <div class="col-sm-6 mt-3">
+<img src="{% static 'img/sm.jpeg' %}" alt="" height="300px">
+  </div>
+ </div>
+{% endblock %} 

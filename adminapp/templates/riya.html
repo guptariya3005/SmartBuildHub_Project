@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <title>Introduction</title>
+</head>
+<body>
+  <h1 class="text-center">Hello 🤗</h1>  
+<div class="row">
+    <div class="col-sm-6 mx-auto">
+        <div class="card ">
+ 
+  <div class="card-body mt-2">
+    <h3>Name: <i class="text-warning">Riya Gupta</i></h3>
+     <h3>Contact no: <i class="text-warning">9451028104</i></h3>
+      <h3>Email Id: <i class="text-warning">rg875138@gmail.com</i></h3>
+      <h3>Profession: <i class="text-warning">Student</i></h3>
+    <h3>Branch: <i class="text-warning">Information Technology at GGP Lucknow</i></h3>
+    <h3>Qualification: <i class="text-warning">Continue</i></h3>
+    <h3>Address: <i class="text-warning">Ramnath Deoria, Deoria(U.P.),India</i></h3>
+   
+    <a href="{% url 'index' %}" class="btn btn-primary">Home</a>
+  </div>
+</div>
+    </div>
+</div>
+ <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
+

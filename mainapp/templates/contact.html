@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Contact
+{% endblock %}
+{% block main %}
+<div class="row">
+  <div class="col-sm-10 mx-auto shadow">
+    <h1 class="text-center text-warning"><u>Contact Us</u></h1>
+    <div class="row mt-5">
+      <div class="col-sm-6">
+        <h4>—Get in touch—</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28459.0436873134!2d80.93253074371367!3d26.923150569559883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957b75d9721a9%3A0x7b287d1599f1af94!2sJankipuram%2C%20Lucknow%2C%20Uttar%20Pradesh%20226021!5e0!3m2!1sen!2sin!4v1753493252281!5m2!1sen!2sin"
+          width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-sm-6 shadow">
+        {% if messages %}
+        {% for m in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          {{m}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        <form method="post" class="row">
+          {% csrf_token %}
+          <div class="col-sm-12">
+            <div class="col-md-6 ms-4">
+              <label for="name" class="form-label text-warning">Name</label>
+              <input type="text" name="name" class="form-control mt-2 btn btn-outline-warning" id="name"
+                placeholder="Enter your name">
+            </div>
+            <div class="col-md-6 mt-3 ms-4">
+              <label for="inputEmail4" class="form-label text-warning">Email</label>
+              <input type="email" name="email" class="form-control btn btn-outline-warning" id="inputEmail4"
+                placeholder="Enter your E-mail ">
+            </div>
+            <div class="col-md-6 mt-3 ms-4">
+              <label for="contact" class="form-label text-warning">Contact</label>
+              <input type="number" name="contactno" class="form-control mt-2 btn btn-outline-warning" id="contact"
+                placeholder="Enter your Contact no.">
+            </div>
+            <div class="col-md-6 mt-3 ms-4">
+              <label for="subject" class="form-label text-warning">Subject</label>
+              <input type="text" name="subject" class="form-control mt-2 btn btn-outline-warning" id="subject"
+                placeholder="Enter your subject">
+            </div>
+            <div class="col-md-6 mt-3 ms-4">
+              <label for="message" class="form-label text-warning">Message</label>
+              <textarea class="form-control btn btn-outline-warning" name="message" id="messaage"
+                placeholder="Enter your message"></textarea>
+            </div>
+            <div class="col-sm-12 text-center mt-5 ms-4">
+              <button type="submit" class="btn btn-warning">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

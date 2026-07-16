@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Register
+{% endblock %}
+{% block main %}
+
+<div class="row py-3">
+  <h1 class="fw-bold text-center"><u>Register Now</u></h1>
+  <div class="row">
+    <div class="col-sm-5 mt-3 ms-5" data-aos="zoom-in">
+      <img src="{% static 'img/form2.jpeg' %}" alt="" height="450px" width="480px">
+    </div>
+
+    <div class="col-sm-6 mt-3">
+      {% if messages %}
+      {% for m in messages %}
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{m}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      <form method="post">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control border-warning" placeholder="First name"
+              aria-label="First name" required>
+          </div>
+
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control border-warning" id="inputEmail4" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control border-warning" id="inputPassword4" required>
+          </div>
+          <div class="col-12">
+            <label for="contactno" class="form-label">Contact No</label>
+            <input type="number" name="contactno" class="form-control border-warning" id="cn" required>
+          </div>
+          <div class="col-md-4">
+            <label for="formselect" class="form-label">Select usertype</label>
+            <select id="utype" name="usertype" class="form-select border-warning" required>
+              <option selected disabled>Open this select menu</option>
+              <option value="homeowner">Home owner</option>
+              <option value="contractor">Contractor</option>
+            </select>
+          </div>
+
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-warning">Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

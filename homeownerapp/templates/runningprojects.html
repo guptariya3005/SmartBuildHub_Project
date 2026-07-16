@@ -1,0 +1,32 @@
+{% extends 'homeownerbase.html' %}
+{% block homeowner %}
+<h4>Homeowner Running Projects</h4>
+{% if projects %}
+<table class="table">
+    <tr>
+        <th>S.No.</th>
+        <th>Project Name</th>
+        <th>Project Status</th>
+        <th>Progress (in %)</th>
+        <th>Contractor Name</th>
+        <th>Contractor Contact No</th>
+        <th>Action</th>
+    </tr>
+    {% for p in projects %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{p.projectname}}</td>
+        <td>{{p.status}}</td>
+        <td>{{p.progress}}</td>
+        <td>{{p.contractor.name}}</td>
+        <td>{{p.contractor.contactno}}</td>
+        <td>
+            <a href="{% url 'viewupdates' id=p.id %}" class="btn btn-primary">View Updates</a>
+        </td>
+    </tr>
+{% endfor %}
+</table>
+{% else %}
+<p class="text-center">You have no running projects.</p>
+{% endif %}
+{% endblock %}
